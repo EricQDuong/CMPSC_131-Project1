@@ -220,33 +220,33 @@ PercDisc1 = PercentageDiscount(0.2)
 user1.discount = PercDisc1
 
 #This print statement is to check the Encapsulation of cart_items and makes sure that it is a private attribute
-#print(user1Cart.__cart_items)
+print(user1Cart.__cart_items)
 
 #user1 checkout() method check, ensures that discounts are applied
-#user1.checkout()
+user1.checkout()
 #Makes sure that the cart is clear after checkout
-#user1.cart.view_cart()
+user1.cart.view_cart()
 
-#Rice.get_product_info()
+Rice.get_product_info()
 #Testing update_quantity() method, making the Rice quantity 2 instead of 1 
-#Rice.update_quantity(2)
+Rice.update_quantity(2)
 #Testing get_product_info() method, prints out the information of Rice after the quantity change
-#Rice.get_product_info()
+Rice.get_product_info()
 
 #Testing Cart class
 
 #Testing add_product() method to add Rice into user2Carts cart
-#user2Cart.add_product(Rice)
+user2Cart.add_product(Rice)
 #Checking to make sure Rice was added into user2Cart, as well as checking if view_cart() method works
-#user2Cart.view_cart()
+user2Cart.view_cart()
 #Testing calculate_total() method from Cart class, so far it would calculate the total price for 2 Rice objects 
-#print(user2Cart.calculate_total())
+print(user2Cart.calculate_total())
 #Testing remove_product() method from Cart class, 'White Rice' is removed
-#user2Cart.remove_product('White Rice')
+user2Cart.remove_product('White Rice')
 #Verifying that Rice object has been removed from user2Cart, so cart should be empty
-#user2Cart.view_cart()
+user2Cart.view_cart()
 #This print statement is to check the Encapsulation of cart_items and makes sure that it is a private attribute
-#print(user2Cart.__cart_items)
+print(user2Cart.__cart_items)
 
 #Testing User class
 
@@ -255,12 +255,12 @@ user2.add_to_cart(Rice)
 user2.add_to_cart(Beans)
 user2.add_to_cart(Cereal)
 #Verifying the method by checking user2s cart using Cart class view_cart() method
-#user2.cart.view_cart()
+user2.cart.view_cart()
 
 #Testing remove_from_cart() method by providing product_id
-#user2.remove_from_cart('Black Beans')
+user2.remove_from_cart('Black Beans')
 #Verifying the method by checking user2s cart using Cart class view_cart() method
-#user2.cart.view_cart()
+user2.cart.view_cart()
 
 #Instance of FixedAmountDiscount is created named PercDisc2, with a given fixed amount 10
 PercDisc2 = FixedAmountDiscount(10)
